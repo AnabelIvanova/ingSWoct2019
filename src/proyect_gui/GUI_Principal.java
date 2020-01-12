@@ -1,5 +1,6 @@
 package proyect_gui;
 
+
 public class GUI_Principal extends javax.swing.JFrame {
 
     public GUI_Principal() {
@@ -183,15 +184,17 @@ public class GUI_Principal extends javax.swing.JFrame {
 
     private void menu_registroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_registroUsuarioActionPerformed
         // TODO add your handling code here:
-        GUI_RegistroUsuarios b = new GUI_RegistroUsuarios();
+        RegistroUsuarios b = new RegistroUsuarios();
         b.setVisible(true);
         dispose();
-        
+
+    
+   
     }//GEN-LAST:event_menu_registroUsuarioActionPerformed
 
     private void registroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroUsuarioActionPerformed
         // TODO add your handling code here:
-        GUI_RegistroUsuarios b = new GUI_RegistroUsuarios();
+        RegistroUsuarios b = new RegistroUsuarios();
         b.setVisible(true);
         dispose();
     }//GEN-LAST:event_registroUsuarioActionPerformed
@@ -201,6 +204,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_RegistroRutas c = new GUI_RegistroRutas();
         c.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_registroRutasActionPerformed
 
     private void registroPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroPasajeroActionPerformed
