@@ -36,9 +36,12 @@ public class MetodoRutas {
             pw.println("|"+rutas.getFecha_Ruta());
             pw.close();
         } catch (IOException e){
+             
             JOptionPane.showMessageDialog(null, e);
+            
         }
     }
+
     //mostrar los datos en el jtable
     public DefaultTableModel listaRutas(){
         Vector cabeceras = new Vector();
@@ -94,14 +97,18 @@ public class MetodoRutas {
     }
     
     public void EditarRutas() {
-           
+        
         //FALTA
     }
     
-    
+
     public void EliminarRutas() {
            
         //FALTA
+    }
+
+    private void Message(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

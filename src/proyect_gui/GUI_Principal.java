@@ -188,13 +188,22 @@ public class GUI_Principal extends javax.swing.JFrame {
         b.setVisible(true);
         dispose();
 
-    
+     try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroPasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
    
     }//GEN-LAST:event_menu_registroUsuarioActionPerformed
 
     private void registroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroUsuarioActionPerformed
         // TODO add your handling code here:
-        RegistroUsuarios b = new RegistroUsuarios();
+        GUI_RegistroUsuarios b = new GUI_RegistroUsuarios();
         b.setVisible(true);
         dispose();
     }//GEN-LAST:event_registroUsuarioActionPerformed
@@ -209,7 +218,7 @@ public class GUI_Principal extends javax.swing.JFrame {
 
     private void registroPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroPasajeroActionPerformed
         // TODO add your handling code here:
-        RegistroDePasajero b = new RegistroDePasajero();
+        GUI_RegistroPasajeros b = new GUI_RegistroPasajeros();
         b.setVisible(true);
         dispose();
     }//GEN-LAST:event_registroPasajeroActionPerformed

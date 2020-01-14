@@ -319,15 +319,25 @@ public class GUI_RegistroUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_u_nuevoActionPerformed
 
     private void btn_u_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_u_eliminarActionPerformed
-       
-
+       //accion boton eliminar
+     int eli=table_usuario.getSelectedRow();
+        if (eli>=0){
+            mdlTablaU.removeRow(eli);
+        }else{
+       //JOptionPane.showMessageDialog(null"No hay registros para eliminar");
         
     }//GEN-LAST:event_btn_u_eliminarActionPerformed
+    
+    }
 
     private void btn_u_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_u_editarActionPerformed
        
-        
-        
+        int edi=table_usuario.getSelectedRow();
+        if (edi>=0){
+            mdlTablaU.removeRow(edi);
+        }else{
+            
+        }
     }//GEN-LAST:event_btn_u_editarActionPerformed
 
     /**
@@ -353,6 +363,16 @@ public class GUI_RegistroUsuarios extends javax.swing.JFrame {
         } catch (IllegalAccessException ex) {
             java.util.logging.Logger.getLogger(GUI_RegistroUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(GUI_RegistroUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>

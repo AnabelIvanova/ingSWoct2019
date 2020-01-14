@@ -1,5 +1,7 @@
 package proyect_clases;
 
+import proyect_gui.GUI_RegistroPasajeros;
+
 public class Usuario {
     
     private int     id_usuario;
@@ -58,7 +60,17 @@ public class Usuario {
 
     public void setPassword(String password) {
         this.password = password;
-    }
     
     
+   try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroPasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }  
+}
 }

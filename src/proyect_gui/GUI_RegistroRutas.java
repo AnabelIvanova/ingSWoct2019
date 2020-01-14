@@ -27,6 +27,7 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
         table_rutas.setModel(mdlTablaR);
         table_rutas.setModel(metodos.listaRutas());
         
+   
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -324,6 +325,7 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btn_r_salirActionPerformed
 
+    
     private void btn_r_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_r_nuevoActionPerformed
         // Limpia los Jtext:
         txt_r_id.setText("");
@@ -333,6 +335,7 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
         txt_r_costo.setText("");
         txt_r_hora.setText("");
         txt_r_fecha.setText("");
+   
     }//GEN-LAST:event_btn_r_nuevoActionPerformed
 
     private void btn_r_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_r_eliminarActionPerformed
@@ -369,16 +372,21 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(GUI_RegistroRutas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+         
+        
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
+        
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new GUI_RegistroRutas().setVisible(true);
             }
+           
         });
     }
 
@@ -413,4 +421,7 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
     private javax.swing.JTextField txt_r_nombre1;
     private javax.swing.JTextField txt_r_origen;
     // End of variables declaration//GEN-END:variables
-}
+
+    
+    }
+
