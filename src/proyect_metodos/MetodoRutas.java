@@ -97,14 +97,14 @@ public class MetodoRutas {
     }
     
     public void EditarRutas() {
+        System.out.println("EditarRutas"); 
         
-        //FALTA
     }
     
 
     public void EliminarRutas() {
-           
-        //FALTA
+         System.out.println("EliminarRutas"); 
+        
     }
 
     private void Message(String string) {

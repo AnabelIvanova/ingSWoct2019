@@ -320,24 +320,58 @@ public class GUI_RegistroUsuarios extends javax.swing.JFrame {
 
     private void btn_u_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_u_eliminarActionPerformed
        //accion boton eliminar
-     int eli=table_usuario.getSelectedRow();
+      int eli=table_usuario.getSelectedRow();
         if (eli>=0){
             mdlTablaU.removeRow(eli);
+            try{
+                    BufferedWriter bfw = new BufferedWriter(new FileWriter("C:\\Users\\HackWhite\\Desktop\\Usuario.txt"));
+                      for (int i = 0 ; i < table_usuario.getRowCount(); i++)
+                      {
+                        for(int j = 0 ; j < table_usuario.getColumnCount();j++)
+                        {
+                            
+                            bfw.write((String)(table_usuario.getValueAt(i,j)));
+                            bfw.write("|");
+                        }bfw.newLine();
+                      }
+                      bfw.close();
+            }catch(Exception ex) {
+
+                ex.printStackTrace();
+            }
         }else{
-       //JOptionPane.showMessageDialog(null"No hay registros para eliminar");
+            JOptionPane.showMessageDialog(null, "No hay registros para eliminar");
+        }
         
     }//GEN-LAST:event_btn_u_eliminarActionPerformed
     
-    }
+    
 
     private void btn_u_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_u_editarActionPerformed
        
-        int edi=table_usuario.getSelectedRow();
+         int edi=table_usuario.getSelectedRow();
         if (edi>=0){
             mdlTablaU.removeRow(edi);
+            try{
+                    BufferedWriter bfw = new BufferedWriter(new FileWriter("C:\\Users\\HackWhite\\Desktop\\Usuario.txt"));
+                      for (int i = 0 ; i < table_usuario.getRowCount(); i++)
+                      {
+                        for(int j = 0 ; j < table_usuario.getColumnCount();j++)
+                        {
+                            
+                            bfw.write((String)(table_usuario.getValueAt(i,j)));
+                            bfw.write("|");
+                        }bfw.newLine();
+                      }
+                      bfw.close();
+            }catch(Exception ex) {
+
+                ex.printStackTrace();
+            }
         }else{
-            
+            JOptionPane.showMessageDialog(null, "No hay registros para editar");
         }
+        
     }//GEN-LAST:event_btn_u_editarActionPerformed
 
     /**

@@ -340,6 +340,8 @@ public class GUI_RegistroRutas extends javax.swing.JFrame {
 
     private void btn_r_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_r_eliminarActionPerformed
         // Boton eliminar pasajeros en tabla:
+        
+        
     }//GEN-LAST:event_btn_r_eliminarActionPerformed
 
     private void btn_r_actializarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_r_actializarActionPerformed
