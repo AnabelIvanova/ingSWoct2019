@@ -90,9 +90,31 @@ public class MetodoUsuario {
     }
     
       public void EditarRutas() {
+       try {
+            FileReader fr = new FileReader(".\\Rutas.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String d;
+            while ((d=br.readLine())!=null){
+                StringTokenizer dato = new StringTokenizer (d,"|");
+                Vector x = new Vector();
+                while (dato.hasMoreTokens()){
+                    x.addElement(dato.nextToken());
+                    }
+                        String a = x.elementAt(0).toString();
+                Object Ruta = null;
+                        if(a.equals(Ruta)){
+                            v1=x;
+                            System.out.println(v1);     
+                }
+            }br.close();
+            fr.close();
+        }catch (Exception e){
+        JOptionPane.showMessageDialog(null, e);
+        }       
            
-       System.out.println("EditarRutas");
-    }
+     
+      }
+
     
     
     public void EliminarRutas() {
