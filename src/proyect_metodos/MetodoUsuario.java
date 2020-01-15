@@ -91,13 +91,13 @@ public class MetodoUsuario {
     
       public void EditarRutas() {
            
-        //FALTA
+       System.out.println("EditarRutas");
     }
     
     
     public void EliminarRutas() {
            
-        //FALTA
+        System.out.println("EliminarRutas");
     }
   
 }

@@ -184,7 +184,7 @@ public class GUI_Principal extends javax.swing.JFrame {
 
     private void menu_registroUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_registroUsuarioActionPerformed
         // TODO add your handling code here:
-        RegistroUsuarios b = new RegistroUsuarios();
+        GUI_RegistroUsuarios b = new GUI_RegistroUsuarios();
         b.setVisible(true);
         dispose();
 
@@ -196,7 +196,7 @@ public class GUI_Principal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUI_RegistroPasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_RegistroUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
    
     }//GEN-LAST:event_menu_registroUsuarioActionPerformed
@@ -206,6 +206,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_RegistroUsuarios b = new GUI_RegistroUsuarios();
         b.setVisible(true);
         dispose();
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_registroUsuarioActionPerformed
 
     private void registroRutasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroRutasActionPerformed
@@ -213,7 +223,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_RegistroRutas c = new GUI_RegistroRutas();
         c.setVisible(true);
         dispose();
-        
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroRutas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_registroRutasActionPerformed
 
     private void registroPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroPasajeroActionPerformed
@@ -221,6 +240,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_RegistroPasajeros b = new GUI_RegistroPasajeros();
         b.setVisible(true);
         dispose();
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_RegistroPasajeros.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_registroPasajeroActionPerformed
 
     private void ventaBoletosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ventaBoletosActionPerformed
@@ -228,6 +257,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_VentaDeBoletos b = new GUI_VentaDeBoletos();
         b.setVisible(true);
         dispose();
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_VentaDeBoletos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_ventaBoletosActionPerformed
 
     private void reporteVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporteVentasActionPerformed
@@ -235,6 +274,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_ReporteVentas b = new GUI_ReporteVentas();
         b.setVisible(true);
         dispose();
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_ReporteVentas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_reporteVentasActionPerformed
 
     private void reporteAccesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporteAccesoActionPerformed
@@ -242,6 +291,16 @@ public class GUI_Principal extends javax.swing.JFrame {
         GUI_ReporteAccesos b = new GUI_ReporteAccesos();
         b.setVisible(true);
         dispose();
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(GUI_ReporteAccesos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_reporteAccesoActionPerformed
 
     /**
